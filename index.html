@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>لیمر | فست‌فود بوشهر</title>
+<meta name="description" content="لیمر — فست‌فود بوشهر. برگر، پیتزا، ساندویچ و سوخاری تازه، با ارسال سریع.">
+<link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header" id="header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top">
+      <img src="assets/img/logo.svg" alt="لیمر" width="44" height="44">
+      <span class="brand-text"><b>لیمر</b><small>فست‌فود بوشهر</small></span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="#menu">منو</a>
+      <a href="#about">درباره ما</a>
+      <a href="#gallery">گالری</a>
+      <a href="#contact">تماس و آدرس</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="btn btn-primary btn-sm" href="tel:+989000000000" data-tel>سفارش تلفنی</a>
+      <button class="burger" id="burger" aria-label="منو" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-glow"></div>
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+        <span class="pill">🔥 تازه، داغ، سریع</span>
+        <h1>طعمی که<br><em>برمی‌گردی</em> براش</h1>
+        <p>برگرِ دست‌ساز، پیتزای پنیری، ساندویچ و سوخاری — همه با مواد تازه، هر روز در لیمر بوشهر.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#menu">مشاهده منو</a>
+          <a class="btn btn-ghost" href="tel:+989000000000" data-tel>📞 سفارش تلفنی</a>
+        </div>
+        <ul class="hero-stats">
+          <li><b>۱۵</b><span>دقیقه آماده‌سازی</span></li>
+          <li><b>۱۰۰٪</b><span>مواد تازه</span></li>
+          <li><b>۴٫۸</b><span>امتیاز مشتری</span></li>
+        </ul>
+      </div>
+
+      <div class="hero-art" aria-hidden="true">
+        <div class="plate">
+          <div class="burger">
+            <span class="bun top"></span>
+            <span class="lettuce"></span>
+            <span class="cheese"></span>
+            <span class="patty"></span>
+            <span class="bun bottom"></span>
+          </div>
+          <div class="fries">
+            <i></i><i></i><i></i><i></i><i></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features">
+    <div class="wrap grid-3">
+      <article class="feat"><span class="feat-ico">🥬</span><h3>مواد تازه روز</h3><p>گوشت چرخ‌کرده روز، سبزیجات و نان تازه — بدون فریزر.</p></article>
+      <article class="feat"><span class="feat-ico">⚡</span><h3>آماده در ۱۵ دقیقه</h3><p>سفارشت رو بده، توی ربع ساعت داغ به دستت می‌رسه.</p></article>
+      <article class="feat"><span class="feat-ico">🛵</span><h3>ارسال در بوشهر</h3><p>پیک اختصاصی برای محدوده‌ی مرکز شهر و خیابان‌های اطراف.</p></article>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="menu-sec" id="menu">
+    <div class="wrap">
+      <header class="sec-head">
+        <h2>منوی لیمر</h2>
+        <p>دسته‌بندی رو انتخاب کن</p>
+      </header>
+
+      <div class="tabs" id="tabs" role="tablist">
+        <button class="tab active" data-cat="burger" role="tab">🍔 برگر</button>
+        <button class="tab" data-cat="pizza" role="tab">🍕 پیتزا</button>
+        <button class="tab" data-cat="sandwich" role="tab">🥪 ساندویچ</button>
+        <button class="tab" data-cat="fried" role="tab">🍗 سوخاری</button>
+        <button class="tab" data-cat="drink" role="tab">🥤 نوشیدنی</button>
+      </div>
+
+      <div class="menu-grid" id="menuGrid"><!-- filled by JS --></div>
+
+      <p class="menu-note">قیمت‌ها نمونه‌اند — با منوی واقعی مغازه جایگزین می‌شوند.</p>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="wrap about-inner">
+      <div class="about-copy">
+        <span class="pill">درباره لیمر</span>
+        <h2>یک مغازه‌ی کوچک با طعم بزرگ</h2>
+        <p>لیمر از یک آشپزخانه‌ی کوچک در بوشهر شروع شد؛ با یک هدف ساده: فست‌فودی که هم سریع باشه هم واقعاً خوشمزه.
+           امروز همون وسواس روی کیفیت مواد اولیه رو داریم — هر برگر دست‌ساز، هر پیتزا با پنیر تازه.</p>
+        <ul class="ticks">
+          <li>گوشت تازه، چرخ‌شده در همان روز</li>
+          <li>نان برگر مخصوص، پخت روزانه</li>
+          <li>سس‌های خانگی</li>
+          <li>بسته‌بندی بهداشتی برای بیرون‌بر</li>
+        </ul>
+      </div>
+      <div class="about-card">
+        <div class="about-emoji">🍔</div>
+        <b>لیمر</b>
+        <span>فست‌فود · بوشهر</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery-sec" id="gallery">
+    <div class="wrap">
+      <header class="sec-head"><h2>گالری</h2><p>بعداً عکس‌های واقعی مغازه و غذاها اینجا می‌شینه</p></header>
+      <div class="gallery" id="gallery">
+        <figure class="g g1"><figcaption>برگر مخصوص</figcaption></figure>
+        <figure class="g g2"><figcaption>پیتزا پنیری</figcaption></figure>
+        <figure class="g g3"><figcaption>ساندویچ ویژه</figcaption></figure>
+        <figure class="g g4"><figcaption>سوخاری</figcaption></figure>
+        <figure class="g g5"><figcaption>سیب‌زمینی</figcaption></figure>
+        <figure class="g g6"><figcaption>نوشیدنی</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="wrap contact-inner">
+      <div class="contact-copy">
+        <h2>آدرس و ساعت کاری</h2>
+        <ul class="info">
+          <li><span>📍</span><div><b>آدرس</b><p>بوشهر، خیابان …، جنب … (این متن را با آدرس واقعی عوض کنید)</p></div></li>
+          <li><span>🕒</span><div><b>ساعت کاری</b><p>هر روز ۱۲:۰۰ تا ۲۳:۳۰</p></div></li>
+          <li><span>📞</span><div><b>تلفن سفارش</b><p><a href="tel:+989000000000" data-tel>۰۹۰۰-۰۰۰-۰۰۰۰</a></p></div></li>
+          <li><span>📷</span><div><b>اینستاگرام</b><p><a href="https://instagram.com/" target="_blank" rel="noopener" data-ig>@laymer.bushehr</a></p></div></li>
+        </ul>
+        <div class="contact-cta">
+          <a class="btn btn-primary" href="tel:+989000000000" data-tel>سفارش تلفنی</a>
+          <a class="btn btn-ghost" href="https://wa.me/989000000000" target="_blank" rel="noopener" data-wa>واتساپ</a>
+        </div>
+      </div>
+
+      <div class="map-card">
+        <div class="map-fake">
+          <span>🗺</span>
+          <p>نقشه بعد از فعال شدن دامنه اینجا لود می‌شود</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="brand small">
+      <img src="assets/img/logo.svg" alt="" width="34" height="34">
+      <span class="brand-text"><b>لیمر</b><small>فست‌فود بوشهر</small></span>
+    </div>
+    <p>© <span id="year"></span> لیمر — تمام حقوق محفوظ است.</p>
+  </div>
+</footer>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
