@@ -77,7 +77,13 @@ function renderMenu(cat) {
   if (!grid) return;
   const items = MENU[currentCat] || [];
   if (!items.length) {
-    grid.innerHTML = `<div class="menu-empty"><span>🍔</span><b>منو داره آماده می‌شه</b><p>به‌زودی آیتم‌های لیمر اینجا می‌شینه.</p></div>`;
+    grid.innerHTML = `<div class="menu-empty">
+      <svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="#ff8f57" stroke-width="1.6"
+           stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M4 10.5h16"/><path d="M5.5 10.5a6.5 6.5 0 0 0 13 0"/>
+        <path d="M12 4.2v2.2"/><path d="M9.6 4.6v1.8"/><path d="M14.4 4.6v1.8"/>
+      </svg>
+      <b>منو داره آماده می‌شه</b><p>به‌زودی آیتم‌های لیمر اینجا می‌شینه.</p></div>`;
     return;
   }
   grid.innerHTML = items
