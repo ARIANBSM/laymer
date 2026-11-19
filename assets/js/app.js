@@ -49,11 +49,13 @@ const MENU = {
     { n: "کوکاکولا بزرگ", d: "بطری ۱.۵ لیتری، سرد", p: 65000, img: "assets/img/drinks/cola-bottle.svg" },
     { n: "فانتا پرتغال بزرگ", d: "بطری ۱.۵ لیتری، سرد", p: 65000, img: "assets/img/drinks/fanta-orange-bottle.svg" },
     { n: "فانتا شاتوت بزرگ", d: "بطری ۱.۵ لیتری، سرد", p: 65000, img: "assets/img/drinks/fanta-berry-bottle.svg" },
+    { n: "دوغ کوچک", d: "بطری ۲۵۰ میلی‌لیتری، خنک", p: 25000, img: "assets/img/drinks/doogh-small.svg" },
+    { n: "دوغ بزرگ", d: "بطری ۱.۵ لیتری، خنک", p: 55000, img: "assets/img/drinks/doogh-large.svg" },
   ],
 };
 
 
-const CART_KEY = "laymer_cart_v5";
+const CART_KEY = "laymer_cart_v6";
 const FA_DIGITS = "۰۱۲۳۴۵۶۷۸۹";
 const AR_DIGITS = "٠١٢٣٤٥٦٧٨٩";
 
