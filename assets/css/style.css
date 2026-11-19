@@ -383,3 +383,10 @@ body.has-cart{padding-bottom:96px}
 /* ===== brand logo ===== */
 .about-logo{width:100%;height:auto;border-radius:16px;margin-bottom:.85rem;border:1px solid var(--line);display:block}
 .footer-inner .brand img{border-radius:10px}
+
+/* empty menu state */
+.menu-empty{
+  grid-column:1/-1;text-align:center;color:var(--muted);font-size:.9rem;
+  padding:2.5rem 1rem;margin:0;border:1px dashed var(--line);border-radius:var(--radius);
+  background:rgba(255,255,255,.015);
+}
