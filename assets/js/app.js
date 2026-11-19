@@ -21,7 +21,6 @@ const MENU = {
     },
   ],
   sandwich: [],
-  fried: [],
   drink: [],
 };
 
