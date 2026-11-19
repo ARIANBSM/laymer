@@ -28,6 +28,9 @@
     </nav>
 
     <div class="header-actions">
+      <button class="cart-btn" id="cartBtn" type="button" aria-label="سبد خرید">
+        🛒 <span class="cart-badge" id="cartCount" hidden>۰</span>
+      </button>
       <a class="btn btn-primary btn-sm" href="tel:+989000000000" data-tel>سفارش تلفنی</a>
       <button class="burger" id="burger" aria-label="منو" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -170,6 +173,57 @@
   </section>
 
 </main>
+
+<!-- ===== سبد خرید: نوار پایین ===== -->
+<div class="cart-bar" id="cartBar" hidden>
+  <button class="cart-bar-main" id="barOpen" type="button">
+    <span class="cart-bar-ico">🛒</span>
+    <span class="cart-bar-txt"><b id="barTotal">۰ تومان</b><small id="barCount">۰ آیتم</small></span>
+    <span class="cart-bar-go">مشاهده سبد</span>
+  </button>
+</div>
+
+<!-- ===== سبد خرید: کشو ===== -->
+<div class="drawer" id="drawer" hidden>
+  <div class="drawer-backdrop" data-close></div>
+  <aside class="drawer-panel" role="dialog" aria-modal="true" aria-label="سبد خرید">
+    <header class="drawer-head">
+      <h2>سبد خرید</h2>
+      <button class="drawer-x" type="button" data-close aria-label="بستن">✕</button>
+    </header>
+
+    <div class="drawer-body">
+      <p class="cart-empty" id="cartEmpty">سبدت خالیه — از منو غذا اضافه کن 🍔</p>
+      <ul class="cart-list" id="cartList"></ul>
+
+      <form class="order-form" id="orderForm" novalidate>
+        <div class="field">
+          <label for="fName">اسم</label>
+          <input id="fName" type="text" autocomplete="name" placeholder="مثلاً آرین" required>
+        </div>
+        <div class="field">
+          <label for="fPhone">موبایل</label>
+          <input id="fPhone" type="tel" inputmode="numeric" autocomplete="tel" placeholder="۰۹۱۲۳۴۵۶۷۸۹" required>
+        </div>
+        <div class="field">
+          <label for="fAddr">آدرس</label>
+          <textarea id="fAddr" rows="2" placeholder="بوشهر، خیابان …، پلاک …" required></textarea>
+        </div>
+        <div class="field">
+          <label for="fNote">توضیح (اختیاری)</label>
+          <input id="fNote" type="text" placeholder="مثلاً بدون پیاز، سس اضافه…">
+        </div>
+        <p class="form-err" id="formErr" hidden></p>
+      </form>
+    </div>
+
+    <footer class="drawer-foot">
+      <div class="cart-sum"><span>جمع کل</span><b id="cartTotal">۰ تومان</b></div>
+      <button class="btn btn-primary btn-block" id="sendBtn" type="submit" form="orderForm">ارسال سفارش در واتساپ</button>
+      <p class="drawer-note">سفارش توی واتساپ لیمر باز می‌شه و بعد از تأیید، آماده‌سازی شروع می‌شه.</p>
+    </footer>
+  </aside>
+</div>
 
 <footer class="site-footer">
   <div class="wrap footer-inner">
