@@ -25,19 +25,19 @@ const MENU = {
       n: "ساندویچ مخصوص لیمر",
       d: "سوسیس گوشت ۷۰٪، پنیر گودا ذوب‌شده، سیب‌زمینی سرخ‌کرده و سس مخصوص لیمر در نان باگت تازه",
       p: 265000,
-      e: "🥙",
+      img: "assets/img/sandwich/limar-special.svg",
     },
     {
       n: "فلاجونی",
       d: "ترکیبی از بادمجان سرخ‌شده و قرص فلافل تازه، با گوجه، جعفری و سس سیر خانگی",
       p: 185000,
-      e: "🥙",
+      img: "assets/img/sandwich/falajoni.svg",
     },
     {
       n: "فلافل",
       d: "بهترین نخود، خوشمزه‌ترین فلافل؛ سوخاری تازه با خیارشور، گوجه و سس کنجدی",
       p: 130000,
-      e: "🧆",
+      img: "assets/img/sandwich/falafel.svg",
     },
   ],
   drink: [
@@ -55,7 +55,7 @@ const MENU = {
 };
 
 
-const CART_KEY = "laymer_cart_v6";
+const CART_KEY = "laymer_cart_v7";
 const FA_DIGITS = "۰۱۲۳۴۵۶۷۸۹";
 const AR_DIGITS = "٠١٢٣٤٥٦٧٨٩";
 

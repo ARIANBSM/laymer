@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+<defs>
+<linearGradient id="top" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#ffdba0"/><stop offset=".55" stop-color="#e9b063"/><stop offset="1" stop-color="#bf7f34"/></linearGradient>
+<linearGradient id="bot" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#f2c17c"/><stop offset="1" stop-color="#ad6f28"/></linearGradient>
+</defs>
+<ellipse cx="32" cy="56" rx="25" ry="3.2" fill="#000" opacity=".32"/>
+<rect x="4" y="37.5" width="56" height="13" rx="6.5" fill="url(#bot)"/>
+<rect x="7.5" y="38.2" width="49" height="2.4" rx="1.2" fill="#ffe0ab" opacity=".55"/>
+<path d="M0 38.6q3.8-6 7.6 0t7.6 0t7.6 0t7.6 0t7.6 0t7.6 0t7.6 0t7.6 0" stroke="#4f922f" stroke-width="7.4" fill="none" stroke-linecap="round"/>
+<path d="M1 37.4q3.6-4.6 7.2 0t7.4 0t7.4 0t7.4 0t7.4 0t7.4 0t7.4 0t7.2 0" stroke="#7cc44f" stroke-width="2.6" fill="none" stroke-linecap="round" opacity=".9"/>
+<g>
+<ellipse cx="11" cy="35.6" rx="8" ry="5" fill="#5c3452"/>
+<ellipse cx="11" cy="35.6" rx="5.8" ry="3.2" fill="#9a7590"/>
+<ellipse cx="31" cy="35" rx="8" ry="5" fill="#5c3452"/>
+<ellipse cx="31" cy="35" rx="5.8" ry="3.2" fill="#9a7590"/>
+<ellipse cx="51" cy="35.6" rx="8" ry="5" fill="#5c3452"/>
+<ellipse cx="51" cy="35.6" rx="5.8" ry="3.2" fill="#9a7590"/>
+</g>
+<g fill="#96612f">
+<circle cx="21" cy="38.6" r="4.8"/><circle cx="41" cy="38.8" r="4.8"/><circle cx="59" cy="38.2" r="4.2"/>
+</g>
+<g fill="#6f4420" opacity=".6">
+<circle cx="21" cy="38.6" r="1.7"/><circle cx="41" cy="38.8" r="1.7"/><circle cx="59" cy="38.2" r="1.5"/>
+</g>
+<path d="M4 31.5h56C60 20.5 47.6 12 32 12S4 20.5 4 31.5z" fill="url(#top)"/>
+<path d="M4 31.5h56v3.2H4z" fill="#a4611f" opacity=".55"/>
+<path d="M11 27.4C14.6 19.6 22 15 30 14.2" stroke="#fff6e6" stroke-width="2" fill="none" opacity=".5" stroke-linecap="round"/>
+<g stroke="#9a6420" stroke-width="2" stroke-linecap="round" opacity=".8">
+<path d="M17 20.5l5.8 7"/><path d="M29 16.8l5.8 7"/><path d="M41 18.4l5.8 7"/>
+</g>
+<g fill="#fffaf0" opacity=".9">
+<ellipse cx="15.5" cy="26.6" rx="2.1" ry="1.2" transform="rotate(-26 15.5 26.6)"/>
+<ellipse cx="25.5" cy="21.6" rx="2.1" ry="1.2" transform="rotate(-18 25.5 21.6)"/>
+<ellipse cx="38" cy="20.6" rx="2.1" ry="1.2" transform="rotate(-6 38 20.6)"/>
+<ellipse cx="49.5" cy="26.4" rx="2.1" ry="1.2" transform="rotate(12 49.5 26.4)"/>
+</g>
+</svg>
