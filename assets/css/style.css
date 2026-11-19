@@ -142,7 +142,9 @@ em{color:var(--brand);font-style:normal}
 .card-emoji{
   width:52px;height:52px;flex:0 0 52px;border-radius:14px;display:grid;place-items:center;
   background:linear-gradient(135deg,rgba(255,90,31,.16),rgba(255,183,3,.1));font-size:1.6rem;
+  overflow:hidden;
 }
+.card-emoji img{width:100%;height:100%;object-fit:contain;display:block;padding:6px}
 .card-body{flex:1;min-width:0}
 .card h3{font-size:1rem;margin:0 0 .2rem}
 .card p{color:var(--muted);font-size:.82rem;margin:0 0 .6rem}

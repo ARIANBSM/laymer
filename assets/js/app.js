@@ -40,11 +40,20 @@ const MENU = {
       e: "🧆",
     },
   ],
-  drink: [],
+  drink: [
+    { n: "اسپرایت کوچک", d: "قوطی ۲۵۰ میلی‌لیتری، سرد", p: 30000, img: "assets/img/drinks/sprite-can.svg" },
+    { n: "کوکاکولا کوچک", d: "قوطی ۲۵۰ میلی‌لیتری، سرد", p: 30000, img: "assets/img/drinks/cola-can.svg" },
+    { n: "فانتا پرتغال کوچک", d: "قوطی ۲۵۰ میلی‌لیتری، سرد", p: 30000, img: "assets/img/drinks/fanta-orange-can.svg" },
+    { n: "فانتا شاتوت کوچک", d: "قوطی ۲۵۰ میلی‌لیتری، سرد", p: 30000, img: "assets/img/drinks/fanta-berry-can.svg" },
+    { n: "اسپرایت بزرگ", d: "بطری ۱.۵ لیتری، سرد", p: 65000, img: "assets/img/drinks/sprite-bottle.svg" },
+    { n: "کوکاکولا بزرگ", d: "بطری ۱.۵ لیتری، سرد", p: 65000, img: "assets/img/drinks/cola-bottle.svg" },
+    { n: "فانتا پرتغال بزرگ", d: "بطری ۱.۵ لیتری، سرد", p: 65000, img: "assets/img/drinks/fanta-orange-bottle.svg" },
+    { n: "فانتا شاتوت بزرگ", d: "بطری ۱.۵ لیتری، سرد", p: 65000, img: "assets/img/drinks/fanta-berry-bottle.svg" },
+  ],
 };
 
 
-const CART_KEY = "laymer_cart_v4";
+const CART_KEY = "laymer_cart_v5";
 const FA_DIGITS = "۰۱۲۳۴۵۶۷۸۹";
 const AR_DIGITS = "٠١٢٣٤٥٦٧٨٩";
 
@@ -122,7 +131,7 @@ function renderMenu(cat) {
       const q = cart[k] || 0;
       return `
       <article class="card" style="animation-delay:${i * 60}ms">
-        <div class="card-emoji">${it.e}</div>
+        <div class="card-emoji">${it.img ? `<img src="${it.img}" alt="" width="52" height="52" loading="lazy">` : it.e}</div>
         <div class="card-body">
           <h3>${it.n}</h3>
           <p>${it.d}</p>
