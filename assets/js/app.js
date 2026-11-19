@@ -20,7 +20,6 @@ const MENU = {
       e: "🍔",
     },
   ],
-  pizza: [],
   sandwich: [],
   fried: [],
   drink: [],
