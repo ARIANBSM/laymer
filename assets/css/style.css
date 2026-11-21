@@ -199,13 +199,28 @@ em{color:var(--brand);font-style:normal}
 .info p{margin:0;color:var(--muted);font-size:.86rem}
 .info a{color:var(--brand-2)}
 .contact-cta{display:flex;gap:.6rem;flex-wrap:wrap}
-.map-card{border:1px solid var(--line);border-radius:var(--radius);background:var(--card);overflow:hidden;min-height:280px;display:grid}
-.map-fake{display:grid;place-items:center;text-align:center;gap:.4rem;color:var(--muted);padding:2rem;
-  background:
+.map-card{border:1px solid var(--line);border-radius:var(--radius);background:var(--card);overflow:hidden;min-height:280px;display:grid;grid-template-rows:1fr auto;position:relative}
+.limar-map{min-height:280px;width:100%;background:
     linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px) 0 0/34px 34px,
-    linear-gradient(0deg,rgba(255,255,255,.03) 1px,transparent 1px) 0 0/34px 34px;
-}
-.map-fake span{font-size:2rem}
+    linear-gradient(0deg,rgba(255,255,255,.03) 1px,transparent 1px) 0 0/34px 34px,var(--card)}
+.map-open{display:flex;align-items:center;justify-content:center;gap:.45rem;padding:.75rem;font-size:.88rem;font-weight:700;
+  color:var(--brand-2);border-top:1px solid var(--line);background:rgba(255,255,255,.02)}
+.map-open:hover{background:rgba(255,183,3,.08)}
+/* dark-map filter so OSM tiles match the site theme */
+.limar-map .leaflet-tile{filter:invert(1) hue-rotate(180deg) brightness(.85) contrast(.85) saturate(.7)}
+.limar-map .leaflet-container{background:#161311}
+.leaflet-container{font-family:inherit}
+/* logo pin */
+.limar-pin{position:relative;width:46px;height:56px;filter:drop-shadow(0 6px 10px rgba(0,0,0,.55))}
+.limar-pin .pin-body{position:absolute;inset:0;border-radius:50% 50% 50% 50%/60% 60% 40% 40%;
+  background:linear-gradient(180deg,#ff7a3d,#e04a12);border:2px solid #ffd268;
+  clip-path:path("M23 0C10.3 0 0 10.3 0 23c0 16 23 33 23 33s23-17 23-33C46 10.3 35.7 0 23 0z")}
+.limar-pin .pin-logo{position:absolute;top:5px;left:5px;width:36px;height:36px;border-radius:50%;
+  background:#12100e;border:1.5px solid rgba(255,210,104,.55);display:grid;place-items:center}
+.limar-pin .pin-logo img{width:30px;height:30px}
+.limar-pop{font-family:"Vazirmatn",system-ui,sans-serif;direction:rtl;text-align:right;line-height:1.7}
+.limar-pop b{display:block;font-size:.95rem;margin-bottom:.15rem}
+.limar-pop small{color:#666;font-size:.78rem}
 
 /* ---------- footer ---------- */
 .site-footer{border-top:1px solid var(--line);padding:1.4rem 0;background:var(--bg-2)}

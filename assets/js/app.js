@@ -2,7 +2,7 @@
 
 const SITE = {
   /* شماره واتساپ لیمر — بدون + و بدون صفر اول */
-  waNumber: "989000000000",
+  waNumber: "989011711030",
 };
 
 const MENU = {
@@ -316,3 +316,60 @@ window.addEventListener("storage", (e) => {
   updateCartUI();
   renderMenu();
 });
+
+/* ---------- map with logo pin (no API key, OSM tiles) ---------- */
+(function initLimarMap() {
+  const el = document.getElementById("limarMap");
+  if (!el) return;
+  const LAT = 28.91487, LON = 50.82373;
+
+  const CSS = "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css";
+  const JS = "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js";
+
+  if (!document.querySelector('link[href="' + CSS + '"]')) {
+    const l = document.createElement("link");
+    l.rel = "stylesheet"; l.href = CSS; document.head.appendChild(l);
+  }
+
+  function boot() {
+    const map = L.map(el, {
+      center: [LAT, LON], zoom: 17,
+      zoomControl: true, scrollWheelZoom: false, attributionControl: true,
+    });
+
+    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      maxZoom: 19,
+      attribution: "&copy; OpenStreetMap",
+    }).addTo(map);
+
+    const icon = L.divIcon({
+      className: "",
+      html:
+        '<div class="limar-pin"><div class="pin-body"></div>' +
+        '<div class="pin-logo"><img src="assets/img/mark.svg" alt="لیمر"></div></div>',
+      iconSize: [46, 56],
+      iconAnchor: [23, 53],
+      popupAnchor: [0, -48],
+    });
+
+    L.marker([LAT, LON], { icon, title: "فست‌فود لیمر" })
+      .addTo(map)
+      .bindPopup(
+        '<div class="limar-pop"><b>فست‌فود لیمر</b>' +
+        '<small>خیابان اعتمادیه، دواس، بوشهر<br>' +
+        '<a href="tel:+989011711030" dir="ltr">۰۹۰۱ ۱۷۱ ۱۰۳۰</a></small></div>',
+        { closeButton: false, offset: [0, 0] }
+      )
+      .openPopup();
+
+    /* keep the map snug inside its card */
+    const ro = new ResizeObserver(() => map.invalidateSize());
+    ro.observe(el);
+  }
+
+  if (window.L) return boot();
+  const s = document.createElement("script");
+  s.src = JS;
+  s.onload = boot;
+  document.head.appendChild(s);
+})();
