@@ -411,3 +411,13 @@ body.has-cart{padding-bottom:96px}
 .menu-empty span{font-size:2.2rem;line-height:1;filter:grayscale(.15)}
 .menu-empty b{font-size:1rem;font-weight:800}
 .menu-empty p{margin:0;color:var(--muted);font-size:.85rem}
+/* dark theme for leaflet popup + controls */
+.limar-map .leaflet-popup-content-wrapper{background:#1b1715;color:var(--txt);border:1px solid var(--line);box-shadow:0 14px 34px rgba(0,0,0,.6)}
+.limar-map .leaflet-popup-tip{background:#1b1715;border:1px solid var(--line)}
+.limar-map .leaflet-popup-content{margin:.7rem .9rem}
+.limar-pop small{color:var(--muted)}
+.limar-pop a{color:var(--brand-2)}
+.limar-map .leaflet-control-zoom a{background:#1b1715;color:var(--txt);border-color:var(--line)}
+.limar-map .leaflet-control-zoom a:hover{background:#241f1c}
+.limar-map .leaflet-control-attribution{background:rgba(20,17,16,.85);color:#8a807a;font-size:10px}
+.limar-map .leaflet-control-attribution a{color:#a99e96}
